@@ -9,9 +9,9 @@ https://lnsy-dev.github.io/EMDR-element/
 
 ## Why
 
-When I quit drinking 8 years ago the single best book I read for it was **Hooked: How to Build Habit-Forming Products** by Nir Eyal. A lot of the best research about addiction has been generated and utilized by people trying to figure out how to make the internet more addictive. This is of course perverse and cruel. 
+When I quit drinking 8 years ago the single best book I read for it was **Hooked: How to Build Habit-Forming Products** by Nir Eyal. A lot of the best research about addiction has been generated and utilized by people trying to figure out how to make the internet more addictive. This is, of course, perverse and cruel. 
 
-This custom HTML Element is intended to break these habit forming loops on a website, encouraging the user to focus themselves and move with intention. 
+This custom HTML Element is intended to break these habit forming loops on a website, encouraging the user to focus themselves and browse with intention. 
 
 It is, I hope, humane software. 
 
