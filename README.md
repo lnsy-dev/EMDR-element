@@ -1,69 +1,67 @@
-![Splash Image](./assets/splash.jpg?)
-
-# vanilla-webpack-boilerplate
-For writing passionate Javascript.
-
-Boilerplate for vanilla CSS / JS projects. Great for plugins and libraries! 
+# Breathing Timer
 
 ## Overview
 
-Modern Web development has gotten far too complex. Frameworks and ornate build systems have obscured the fact that the fundamentals of JS and CSS have gotten not just slightly better but really, really good. 
+A custom HTML pop-over that prevents the user from interacting with the page for 1 minute while encouraging them to breath mindfully. Great to break addictive loops on websites.
 
-This project is for people who want to write passionate code and ship it quickly. 
+## Demo
+https://lnsy-dev.github.io/EMDR-element/
 
-## Instructions
+## Why
+
+When I quit drinking 8 years ago the single best book I read for it was **Hooked: How to Build Habit-Forming Products** by Nir Eyal. A lot of the best research about addiction has been generated and utilized by people trying to figure out how to make the internet more addictive. This is of course perverse and cruel. 
+
+This custom HTML Element is intended to break these habit forming loops on a website, encouraging the user to focus themselves and move with intention. 
+
+It is, I hope, humane software. 
+
+## Use
+Include breathing-timer.min.js in your code and include the breathing-timer custom element.
+
+```html
+<script type="module" src="./emdr-element.min.js"></script>
+
+<emdr-element></emdr-element>
+
+```
+
+This places a div that encourages users to breath mindfully for one minute before entering a website. 
+
+## Development
+
+Clone the git repository: 
 
 ```sh
-npm install
+git clone git@github.com:lnsy-dev/EMDR-element.git
+```
+
+cd into the directory and start the application: 
+
+```sh
+cd emdr-timer
 npm start
 ```
 
-This will start a live-server for editing.
+This will spin up a live server for editing. 
 
+### Building
 
-## To build
+To build the application we use webpack. If you don't have webpack installed globally you can do
 
 ```sh
+npm install
+
+```
+
+to install it. 
+
+Run 
+
+```
 npm run build
 ```
 
-This will
- - generate a file called bundle.min.js in the /dist folder that includes the css and js. 
- - mux and copy over the index.html file to /dist
- - copy /assets folder to /dist
+to build the code. 
 
-## Change output name
-
-To change the name of the built file create an **.env** file and add the variable 
-OUTPUT_FILENAME to it, like so: 
-
-```
-OUTPUT_FILENAME=new-filename.min.js
-```
-
-## Custom HTML Elements
-
-This project has an example of a custom HTML Element. For more information about custom HTML elements go to https://lnsy.dev/blog/custom-html-components.html
-
-## A simple deployment on GitHub
-
-Click "Use This Template" and create a new project. 
-
-Clone the project, make your changes. 
-
-Run
-
-```sh
-npm run build
-```
-
-In Github go to settings/pages in the project and select deploy from branch. 
-
-Link to /dist/bundle.js on the published pages. This will load the CSS and JS. 
-
-## About
-
-https://lnsy.dev 
-
-Hire Me!  
+This will create the breathing-timer.min.js in the root directory. 
 

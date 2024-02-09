@@ -1,9 +1,79 @@
-@import "./reset.css";
-@import "./variables.css";
+emdr-element {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: black;
+  left: 0px;
+  top:0px;
 
-body {
-  background-color: var(--bg-color);
-  color: var(--fg-color);
-  font-family: monospace;
-  text-align: center;
+  .breath-label {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9001;
+    color: white;
+  }
+
+  .breath-circle-1 {
+    animation: scaleAnimation 8s infinite ease-in;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: white;
+    width: 10em;
+    height: 10em;
+    left: 15em;
+    top: 50%;
+  }
+  .breath-circle-2 {
+    animation: scaleAnimation2 8s infinite ease-in;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: white;
+    width: 10em;
+    height: 10em;
+    right: 5em;
+    top: 50%;
+  }
+
+}
+
+
+
+@keyframes scaleAnimation {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1); /* Original size */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(2); /* Adjust the scale factor as needed */
+  }
+}
+
+
+
+@keyframes scaleAnimation2 {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(2); /* Adjust the scale factor as needed */
+
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1); /* Original size */
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; /* Fully visible at the start */
+  }
+  to {
+    opacity: 0; /* Fully transparent at the end */
+  }
+}
+
+.fade-out-div {
+  animation: fadeOut 5s forwards; /* Use 'forwards' to retain the end state */
 }
