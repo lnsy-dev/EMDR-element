@@ -2,7 +2,7 @@
 
 ## Overview
 
-A custom HTML pop-over that prevents the user from interacting with the page for 1 minute while encouraging them to breath mindfully. Great to break addictive loops on websites.
+A custom HTML pop-over that prevents the user from interacting with the page for 1 minute while encouraging them to breath mindfully. Great for breaking addictive loops on websites.
 
 ## Demo
 https://lnsy-dev.github.io/EMDR-element/
