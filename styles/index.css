@@ -17,7 +17,7 @@ emdr-element {
   }
 
   .breath-circle-1 {
-    animation: scaleAnimation 8s infinite ease-in;
+    animation: scaleAnimation 8s infinite linear;
     position: fixed;
     z-index: 1000;
     border-radius: 50%;
@@ -28,7 +28,7 @@ emdr-element {
     top: 50%;
   }
   .breath-circle-2 {
-    animation: scaleAnimation2 8s infinite ease-in;
+    animation: scaleAnimation2 8s infinite linear;
     position: fixed;
     z-index: 1000;
     border-radius: 50%;
